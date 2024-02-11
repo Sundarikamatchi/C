@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    /*eligibility for admission*/
+    int maths,physics,chemistry;
+    printf("enter marks in the order maths,physics and chemistry:");
+    scanf("%d%d%d",&maths,&physics,&chemistry);
+    int Total=maths+physics+chemistry;
+    if (((maths>=65)&&(physics>=55)&&(chemistry>=50))||(Total>=180)){
+        printf("eligible");
+    }
+    else{
+        printf("not eligible");
+    }
+}
